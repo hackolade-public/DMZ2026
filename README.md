@@ -19,7 +19,7 @@ This browser-based data modeling solution is highly secure.  See more informatio
 In order to access files prepared in our repository, you must create a connection to your repo:
 
 1) go to the menu option Repository > Repository Connections (last option in the menu)
-2) paste the access token published in <a href="https://hackoladestudio-my.sharepoint.com/:w:/g/personal/pascal_desmarets_hackolade_com/IQCLU6CwcmGGTbt-0oAJz1lSAbp68o7nclCTZIAz6BtC7W8?e=PAkSWQ" target="_blank" rel="noopener noreferrer">this document</a> (Use Ctrl/Cmd+click to open in a new tab)
+2) paste the access token published in <a href="https://hackoladestudio-my.sharepoint.com/:w:/g/personal/pascal_desmarets_hackolade_com/IQCLU6CwcmGGTbt-0oAJz1lSAVp1pVcWUsqimFD3lxMw4C4?e=wLVdAO" target="_blank" rel="noopener noreferrer">this document</a> (Use Ctrl/Cmd+click to open in a new tab)
 3) click the Connect button, then close the dialog.
 
 ## 3. Adjust parameter to facilitate operations with repo
