@@ -31,6 +31,16 @@
             "a7463b07-d044-4c8f-9ef6-ccc3fcf68b0f",
             "1a57390d-1f80-4647-9ac2-c2c0cd6c10c2",
             "0d1dd693-50c4-4e7b-9e8b-2358c64ad23f"
+          ],
+          "glossaryTerms": [
+            {
+              "GUID": "d8894ba0-46c5-41a5-bca0-4575fc0ed931",
+              "glossaryTermId": "a3c8f014-4b00-4480-b5db-d8f5aebb0385"
+            },
+            {
+              "GUID": "3231b1de-d7ce-4960-953f-bfff797cc5e0",
+              "glossaryTermId": "a105adc5-c495-49bc-a4f6-2a9f06dc6bab"
+            }
           ]
         },
         {
@@ -51,7 +61,17 @@
           "GUID": "3d91b54f-6ca4-4a51-ad72-63cd8e234c77",
           "description": "",
           "unique": false,
-          "mode": "string"
+          "mode": "string",
+          "glossaryTerms": [
+            {
+              "GUID": "3e25b698-198c-4ab3-b4a1-e0318e4cdfc6",
+              "glossaryTermId": "a3c8f014-4b00-4480-b5db-d8f5aebb0385"
+            },
+            {
+              "GUID": "88dcc452-cc64-40e6-a1b5-4dd888ce960d",
+              "glossaryTermId": "16eb17aa-9c9b-4c75-8875-73a9edd40aac"
+            }
+          ]
         },
         {
           "code": "",
@@ -4938,7 +4958,37 @@
       "parentCollection": "47f19091-943c-49ea-9b11-ca3f16dc1342",
       "childCollection": "5bfad853-aef4-4b83-9a29-68b456c6eab5",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "c2a4b143-b9ce-4f87-abf2-a125bfbeb9f1",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 2549,
+            "y": 1617
+          },
+          {
+            "x": 2582.5,
+            "y": 1617
+          },
+          {
+            "x": 2582.5,
+            "y": 1581
+          },
+          {
+            "x": 2616,
+            "y": 1581
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ]
+      }
     },
     {
       "name": "MINERAL_refined_as_MINERAL_REFINEMENT",
@@ -4963,7 +5013,37 @@
       "parentCollection": "47f19091-943c-49ea-9b11-ca3f16dc1342",
       "childCollection": "ae8d9b3c-79f5-4762-9b7b-629e79f85011",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "9f0bd907-f44c-45f1-87a5-5a1b2fda0706",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 2708.3333333333335,
+            "y": 1480
+          },
+          {
+            "x": 2708.3333333333335,
+            "y": 1505
+          },
+          {
+            "x": 2725.5,
+            "y": 1505
+          },
+          {
+            "x": 2725.5,
+            "y": 1530
+          }
+        ],
+        "sides": [
+          "bottom",
+          "top"
+        ]
+      }
     },
     {
       "name": "MINERAL_applies_to_PARTY_MINERAL_CONTRACT_TERM",
@@ -4988,7 +5068,37 @@
       "parentCollection": "47f19091-943c-49ea-9b11-ca3f16dc1342",
       "childCollection": "005f25dc-fba0-4328-995d-1fe75460cc63",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "982b4097-af3a-41a4-957a-a26084a43b63",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 3004,
+            "y": 1208
+          },
+          {
+            "x": 2919.5,
+            "y": 1208
+          },
+          {
+            "x": 2919.5,
+            "y": 1581
+          },
+          {
+            "x": 2835,
+            "y": 1581
+          }
+        ],
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
     },
     {
       "name": "JURISDICTION_defines_MINING_METHOD_LEGALITY",
@@ -5013,7 +5123,37 @@
       "parentCollection": "e0956971-e050-40a4-a493-0669be58697c",
       "childCollection": "c2045a8c-c81b-4188-bb61-3b712ef9a2ec",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "8e3d309c-bd02-41ed-9968-0c55a894e476",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1752,
+            "y": 1814
+          },
+          {
+            "x": 1796,
+            "y": 1814
+          },
+          {
+            "x": 1796,
+            "y": 1805
+          },
+          {
+            "x": 1840,
+            "y": 1805
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ]
+      }
     },
     {
       "name": "PARTY_has_LOCATION_ADDRESS",
@@ -5038,7 +5178,37 @@
       "parentCollection": "2a61f42b-cfd7-4d64-bf17-7f51f9b78d65",
       "childCollection": "98add581-e569-4382-a316-0ceb95cd01bd",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "e345d36e-5e65-4e43-83b8-df46750fcca2",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 3132.5,
+            "y": 1960
+          },
+          {
+            "x": 3132.5,
+            "y": 1917
+          },
+          {
+            "x": 3106.5,
+            "y": 1917
+          },
+          {
+            "x": 3106.5,
+            "y": 1874
+          }
+        ],
+        "sides": [
+          "top",
+          "bottom"
+        ]
+      }
     },
     {
       "name": "PARTY_has_PHONE_NUMBER",
@@ -5063,7 +5233,37 @@
       "parentCollection": "2a61f42b-cfd7-4d64-bf17-7f51f9b78d65",
       "childCollection": "6522dbea-5624-4445-9359-8f7663eee24b",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "fdd2bfa8-da1e-4c05-8ccf-e2d07f10188a",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 2852,
+            "y": 2020
+          },
+          {
+            "x": 2928,
+            "y": 2020
+          },
+          {
+            "x": 2928,
+            "y": 1807.3333333333333
+          },
+          {
+            "x": 3004,
+            "y": 1807.3333333333333
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ]
+      }
     },
     {
       "name": "PARTY_has_INTERNET_CONTACT_DETAIL",
@@ -5088,7 +5288,37 @@
       "parentCollection": "2a61f42b-cfd7-4d64-bf17-7f51f9b78d65",
       "childCollection": "11bdcd6b-ffc7-4314-8e03-a8c1aa91bd1d",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "52746a6d-57f4-4c8a-a50d-e17482736ec5",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 3154.5,
+            "y": 1650
+          },
+          {
+            "x": 3154.5,
+            "y": 1702
+          },
+          {
+            "x": 3072.3333333333335,
+            "y": 1702
+          },
+          {
+            "x": 3072.3333333333335,
+            "y": 1754
+          }
+        ],
+        "sides": [
+          "bottom",
+          "top"
+        ]
+      }
     },
     {
       "name": "PARTY_has_PARTY_DOCUMENT",
@@ -5113,7 +5343,37 @@
       "parentCollection": "2a61f42b-cfd7-4d64-bf17-7f51f9b78d65",
       "childCollection": "bd41b865-39b1-4e21-840d-67c5ed9b4a97",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "56e25e87-041b-4134-abb7-f0bf99718ce7",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 2088,
+            "y": 2011
+          },
+          {
+            "x": 2546,
+            "y": 2011
+          },
+          {
+            "x": 2546,
+            "y": 1794
+          },
+          {
+            "x": 3004,
+            "y": 1794
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ]
+      }
     },
     {
       "name": "PARTY_participates_LAND_PARCEL_PARTY",
@@ -5138,7 +5398,37 @@
       "parentCollection": "2a61f42b-cfd7-4d64-bf17-7f51f9b78d65",
       "childCollection": "6213261f-f808-41c0-bb91-f9fb579ef3b6",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "e0f24e47-fdaf-40e4-9072-acf1781b435c",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 2489,
+            "y": 2038
+          },
+          {
+            "x": 2746.5,
+            "y": 2038
+          },
+          {
+            "x": 2746.5,
+            "y": 1834
+          },
+          {
+            "x": 3004,
+            "y": 1834
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ]
+      }
     },
     {
       "name": "PARTY_collects_ORE_SAMPLE_COLLECTOR",
@@ -5163,7 +5453,37 @@
       "parentCollection": "2a61f42b-cfd7-4d64-bf17-7f51f9b78d65",
       "childCollection": "c98d7b8c-774a-4996-84d7-fa4b525982cd",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "50818061-3a68-48ee-b7b6-6b12061817bf",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 2902,
+            "y": 1814
+          },
+          {
+            "x": 2953,
+            "y": 1814
+          },
+          {
+            "x": 2953,
+            "y": 1780.6666666666667
+          },
+          {
+            "x": 3004,
+            "y": 1780.6666666666667
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ]
+      }
     },
     {
       "name": "PARTY_laboratory_ASSAY_ORDER",
@@ -5188,7 +5508,37 @@
       "parentCollection": "2a61f42b-cfd7-4d64-bf17-7f51f9b78d65",
       "childCollection": "f3c5184d-88c4-4871-9f02-a84b761b91be",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "bd58161c-db65-4fdc-bc3f-b859650f97cd",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1699,
+            "y": 2012
+          },
+          {
+            "x": 2351.5,
+            "y": 2012
+          },
+          {
+            "x": 2351.5,
+            "y": 1820.6666666666667
+          },
+          {
+            "x": 3004,
+            "y": 1820.6666666666667
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ]
+      }
     },
     {
       "name": "PARTY_shipment_approver_SITE_MATERIAL_PAYLOAD",
@@ -5213,7 +5563,37 @@
       "parentCollection": "2a61f42b-cfd7-4d64-bf17-7f51f9b78d65",
       "childCollection": "fa656c58-1d2d-43b6-baae-b794e11b00ad",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "febb3ac5-49ed-45a6-934b-d56cb4769686",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 2880.709905660376,
+            "y": 2434.9882075471696
+          },
+          {
+            "x": 2942.3549528301883,
+            "y": 2434.9882075471696
+          },
+          {
+            "x": 2942.3549528301883,
+            "y": 1860.6666666666667
+          },
+          {
+            "x": 3004,
+            "y": 1860.6666666666667
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ]
+      }
     },
     {
       "name": "PARTY_refinery_SITE_MATERIAL_PAYLOAD",
@@ -5238,7 +5618,37 @@
       "parentCollection": "2a61f42b-cfd7-4d64-bf17-7f51f9b78d65",
       "childCollection": "fa656c58-1d2d-43b6-baae-b794e11b00ad",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "aa1ac472-1cec-44ba-a963-26c53e39e844",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 2880.709905660376,
+            "y": 2328.9882075471696
+          },
+          {
+            "x": 2942.3549528301883,
+            "y": 2328.9882075471696
+          },
+          {
+            "x": 2942.3549528301883,
+            "y": 1847.3333333333333
+          },
+          {
+            "x": 3004,
+            "y": 1847.3333333333333
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ]
+      }
     },
     {
       "name": "PARTY_performed_by_MINERAL_REFINEMENT",
@@ -5263,7 +5673,37 @@
       "parentCollection": "2a61f42b-cfd7-4d64-bf17-7f51f9b78d65",
       "childCollection": "ae8d9b3c-79f5-4762-9b7b-629e79f85011",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "870c4f78-638f-4ccf-b859-8e280b060905",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 2893,
+            "y": 1375
+          },
+          {
+            "x": 2948.5,
+            "y": 1375
+          },
+          {
+            "x": 2948.5,
+            "y": 1767.3333333333333
+          },
+          {
+            "x": 3004,
+            "y": 1767.3333333333333
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ]
+      }
     },
     {
       "name": "PARTY_has_terms_PARTY_MINERAL_CONTRACT_TERM",
@@ -5288,7 +5728,37 @@
       "parentCollection": "2a61f42b-cfd7-4d64-bf17-7f51f9b78d65",
       "childCollection": "005f25dc-fba0-4328-995d-1fe75460cc63",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "db8a2c9a-b2ec-49b0-b8b5-1098e029806c",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 3173,
+            "y": 1256
+          },
+          {
+            "x": 3173,
+            "y": 1505
+          },
+          {
+            "x": 3140.6666666666665,
+            "y": 1505
+          },
+          {
+            "x": 3140.6666666666665,
+            "y": 1754
+          }
+        ],
+        "sides": [
+          "bottom",
+          "top"
+        ]
+      }
     },
     {
       "name": "DOCUMENT_linked_to_PARTY_DOCUMENT",
@@ -5313,7 +5783,37 @@
       "parentCollection": "31c0b941-3876-4dcd-98e7-195c4380ebf2",
       "childCollection": "bd41b865-39b1-4e21-840d-67c5ed9b4a97",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "95141339-0b39-44ff-b204-00c042881f93",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 2088,
+            "y": 1994
+          },
+          {
+            "x": 2158,
+            "y": 1994
+          },
+          {
+            "x": 2158,
+            "y": 1133
+          },
+          {
+            "x": 2228,
+            "y": 1133
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ]
+      }
     },
     {
       "name": "DOCUMENT_linked_to_LAND_PARCEL_DOCUMENT",
@@ -5338,7 +5838,37 @@
       "parentCollection": "31c0b941-3876-4dcd-98e7-195c4380ebf2",
       "childCollection": "c95e3114-b6e8-488f-a652-e26206b4baf1",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "88ae1be1-c32b-4195-9f4d-8cf5cda15d0d",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 2133,
+            "y": 1115
+          },
+          {
+            "x": 2180.5,
+            "y": 1115
+          },
+          {
+            "x": 2180.5,
+            "y": 1098.5
+          },
+          {
+            "x": 2228,
+            "y": 1098.5
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ]
+      }
     },
     {
       "name": "DOCUMENT_linked_to_ASSAY_DOCUMENT",
@@ -5363,7 +5893,37 @@
       "parentCollection": "31c0b941-3876-4dcd-98e7-195c4380ebf2",
       "childCollection": "fc23f72b-ee77-4928-8f16-1d1e1d96f341",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "dbb657a6-1e72-44d5-84f3-4894ae4092e5",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1312,
+            "y": 1994
+          },
+          {
+            "x": 1770,
+            "y": 1994
+          },
+          {
+            "x": 1770,
+            "y": 1167.5
+          },
+          {
+            "x": 2228,
+            "y": 1167.5
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ]
+      }
     },
     {
       "name": "DOCUMENT_linked_to_REFINEMENT_DOCUMENT",
@@ -5388,7 +5948,37 @@
       "parentCollection": "31c0b941-3876-4dcd-98e7-195c4380ebf2",
       "childCollection": "b4f8fb07-f2a0-48af-923a-8aa1d6f9d691",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "0b212928-8830-4000-bf97-faf7dd9d7c97",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 2371,
+            "y": 1270
+          },
+          {
+            "x": 2371,
+            "y": 1236
+          },
+          {
+            "x": 2341,
+            "y": 1236
+          },
+          {
+            "x": 2341,
+            "y": 1202
+          }
+        ],
+        "sides": [
+          "top",
+          "bottom"
+        ]
+      }
     },
     {
       "name": "DOCUMENT_linked_to_MINERAL_CONTRACT_DOCUMENT",
@@ -5413,7 +6003,37 @@
       "parentCollection": "31c0b941-3876-4dcd-98e7-195c4380ebf2",
       "childCollection": "f5874e16-cc97-4247-b815-ca62ad3fdd79",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "472bc772-2d95-4f00-83c0-c2c5a65996cb",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 2616,
+            "y": 1115
+          },
+          {
+            "x": 2535,
+            "y": 1115
+          },
+          {
+            "x": 2535,
+            "y": 1133
+          },
+          {
+            "x": 2454,
+            "y": 1133
+          }
+        ],
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
     },
     {
       "name": "LAND_PARCEL_subtype_PROSPECT",
@@ -5438,7 +6058,37 @@
       "parentCollection": "d5324c68-515b-4b8a-9958-bf48dd8b2660",
       "childCollection": "1331a5e5-2977-44a2-9587-e585e2d1cbd5",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "7de80bf2-deaa-481d-a5ec-71b20a5b9366",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1363,
+            "y": 1330
+          },
+          {
+            "x": 1407.5,
+            "y": 1330
+          },
+          {
+            "x": 1407.5,
+            "y": 1348
+          },
+          {
+            "x": 1452,
+            "y": 1348
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ]
+      }
     },
     {
       "name": "LAND_PARCEL_subtype_CLAIM",
@@ -5463,7 +6113,37 @@
       "parentCollection": "d5324c68-515b-4b8a-9958-bf48dd8b2660",
       "childCollection": "7147b340-3e96-45e9-b4e2-1bfb4a0a8580",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "dfbc4bac-5eee-489e-bf41-1f7ae12e4a6d",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1840,
+            "y": 1599
+          },
+          {
+            "x": 1777.5,
+            "y": 1599
+          },
+          {
+            "x": 1777.5,
+            "y": 1356.6666666666667
+          },
+          {
+            "x": 1715,
+            "y": 1356.6666666666667
+          }
+        ],
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
     },
     {
       "name": "LAND_PARCEL_subtype_MINERAL_LEASE",
@@ -5488,7 +6168,29 @@
       "parentCollection": "d5324c68-515b-4b8a-9958-bf48dd8b2660",
       "childCollection": "9d088d92-d6ce-4a33-90c5-2df785d2e261",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "3bc9baa2-9f30-48e1-91c6-ee48c942f307",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1583.5,
+            "y": 1184
+          },
+          {
+            "x": 1583.5,
+            "y": 1270
+          }
+        ],
+        "sides": [
+          "bottom",
+          "top"
+        ]
+      }
     },
     {
       "name": "LAND_PARCEL_subtype_PRIVATE_LAND",
@@ -5513,7 +6215,37 @@
       "parentCollection": "d5324c68-515b-4b8a-9958-bf48dd8b2660",
       "childCollection": "fdd6c139-fab1-4a4c-bf7f-7e2a37c021f1",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "907b367e-0658-438e-888f-a67e37ea695e",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1582.5,
+            "y": 1530
+          },
+          {
+            "x": 1582.5,
+            "y": 1478
+          },
+          {
+            "x": 1583.5,
+            "y": 1478
+          },
+          {
+            "x": 1583.5,
+            "y": 1426
+          }
+        ],
+        "sides": [
+          "top",
+          "bottom"
+        ]
+      }
     },
     {
       "name": "LAND_PARCEL_has_boundary_points_LAND_PARCEL_POINT",
@@ -5538,7 +6270,37 @@
       "parentCollection": "d5324c68-515b-4b8a-9958-bf48dd8b2660",
       "childCollection": "c9c47e63-818d-4d4d-a6af-1b52478b2f96",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "8344c301-b345-4306-8d98-79e0c4492ca2",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1325,
+            "y": 1142
+          },
+          {
+            "x": 1388.5,
+            "y": 1142
+          },
+          {
+            "x": 1388.5,
+            "y": 1309
+          },
+          {
+            "x": 1452,
+            "y": 1309
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ]
+      }
     },
     {
       "name": "LAND_PARCEL_has_docs_LAND_PARCEL_DOCUMENT",
@@ -5563,7 +6325,37 @@
       "parentCollection": "d5324c68-515b-4b8a-9958-bf48dd8b2660",
       "childCollection": "c95e3114-b6e8-488f-a652-e26206b4baf1",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "701dee12-88e7-4b72-bc79-b7e938bfc08e",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1840,
+            "y": 1115
+          },
+          {
+            "x": 1777.5,
+            "y": 1115
+          },
+          {
+            "x": 1777.5,
+            "y": 1287.3333333333333
+          },
+          {
+            "x": 1715,
+            "y": 1287.3333333333333
+          }
+        ],
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
     },
     {
       "name": "LAND_PARCEL_involves_LAND_PARCEL_PARTY",
@@ -5588,7 +6380,37 @@
       "parentCollection": "d5324c68-515b-4b8a-9958-bf48dd8b2660",
       "childCollection": "6213261f-f808-41c0-bb91-f9fb579ef3b6",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "8cbc2c03-ffb1-4bb0-b33c-35a7ba3ba2c6",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 2228,
+            "y": 2038
+          },
+          {
+            "x": 1971.5,
+            "y": 2038
+          },
+          {
+            "x": 1971.5,
+            "y": 1391.3333333333333
+          },
+          {
+            "x": 1715,
+            "y": 1391.3333333333333
+          }
+        ],
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
     },
     {
       "name": "LAND_PARCEL_source_PROSPECT_CONVERSION",
@@ -5613,7 +6435,37 @@
       "parentCollection": "d5324c68-515b-4b8a-9958-bf48dd8b2660",
       "childCollection": "c9ed582e-49c5-4270-993d-96404d0a00ad",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "df6e0d99-c4c4-47e8-aa46-77a87602f670",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1840,
+            "y": 1362
+          },
+          {
+            "x": 1777.5,
+            "y": 1362
+          },
+          {
+            "x": 1777.5,
+            "y": 1339.3333333333333
+          },
+          {
+            "x": 1715,
+            "y": 1339.3333333333333
+          }
+        ],
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
     },
     {
       "name": "LAND_PARCEL_target_PROSPECT_CONVERSION",
@@ -5638,7 +6490,37 @@
       "parentCollection": "d5324c68-515b-4b8a-9958-bf48dd8b2660",
       "childCollection": "c9ed582e-49c5-4270-993d-96404d0a00ad",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "b9b6ad68-a7b7-487a-a902-907cc01b3c18",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1840,
+            "y": 1316
+          },
+          {
+            "x": 1777.5,
+            "y": 1316
+          },
+          {
+            "x": 1777.5,
+            "y": 1322
+          },
+          {
+            "x": 1715,
+            "y": 1322
+          }
+        ],
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
     },
     {
       "name": "LAND_PARCEL_allows_PARCEL_MINING_METHOD_USE",
@@ -5663,7 +6545,37 @@
       "parentCollection": "d5324c68-515b-4b8a-9958-bf48dd8b2660",
       "childCollection": "725bf52e-1ffb-40ad-8b8a-3ade67d9683b",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "27dcfddd-6ffe-4575-aa67-4c33dc43354c",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1381,
+            "y": 1590
+          },
+          {
+            "x": 1416.5,
+            "y": 1590
+          },
+          {
+            "x": 1416.5,
+            "y": 1387
+          },
+          {
+            "x": 1452,
+            "y": 1387
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ]
+      }
     },
     {
       "name": "LAND_PARCEL_yields_ORE_SAMPLE",
@@ -5688,7 +6600,37 @@
       "parentCollection": "d5324c68-515b-4b8a-9958-bf48dd8b2660",
       "childCollection": "a69582d3-03d2-4d02-a19d-73b1b8ba33cc",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "f7480884-3803-4ef2-8b4c-250c383c4e08",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 2228,
+            "y": 1806
+          },
+          {
+            "x": 1971.5,
+            "y": 1806
+          },
+          {
+            "x": 1971.5,
+            "y": 1374
+          },
+          {
+            "x": 1715,
+            "y": 1374
+          }
+        ],
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
     },
     {
       "name": "LAND_PARCEL_produces_SITE_MATERIAL_PAYLOAD",
@@ -5713,7 +6655,37 @@
       "parentCollection": "d5324c68-515b-4b8a-9958-bf48dd8b2660",
       "childCollection": "fa656c58-1d2d-43b6-baae-b794e11b00ad",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "fd7c2be7-c390-4999-ae4d-434a18adc02a",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 2570.709905660376,
+            "y": 2328.9882075471696
+          },
+          {
+            "x": 2142.8549528301883,
+            "y": 2328.9882075471696
+          },
+          {
+            "x": 2142.8549528301883,
+            "y": 1408.6666666666667
+          },
+          {
+            "x": 1715,
+            "y": 1408.6666666666667
+          }
+        ],
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
     },
     {
       "name": "LAND_PARCEL_has_terms_PARTY_MINERAL_CONTRACT_TERM",
@@ -5738,7 +6710,37 @@
       "parentCollection": "d5324c68-515b-4b8a-9958-bf48dd8b2660",
       "childCollection": "005f25dc-fba0-4328-995d-1fe75460cc63",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "382755c0-508b-46ef-b4b2-323baf8b925d",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 3004,
+            "y": 1160
+          },
+          {
+            "x": 2359.5,
+            "y": 1160
+          },
+          {
+            "x": 2359.5,
+            "y": 1304.6666666666667
+          },
+          {
+            "x": 1715,
+            "y": 1304.6666666666667
+          }
+        ],
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
     },
     {
       "name": "MINING_METHOD_OPTION_regulated_by_MINING_METHOD_LEGALITY",
@@ -5763,7 +6765,37 @@
       "parentCollection": "4e8603dc-7e83-4dd6-9d85-3d221daddde9",
       "childCollection": "c2045a8c-c81b-4188-bb61-3b712ef9a2ec",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "f86e4d1a-19a7-414c-97e8-32c4028d0087",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1452,
+            "y": 1814
+          },
+          {
+            "x": 1404,
+            "y": 1814
+          },
+          {
+            "x": 1404,
+            "y": 1805
+          },
+          {
+            "x": 1356,
+            "y": 1805
+          }
+        ],
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
     },
     {
       "name": "MINING_METHOD_OPTION_used_on_PARCEL_MINING_METHOD_USE",
@@ -5788,7 +6820,37 @@
       "parentCollection": "4e8603dc-7e83-4dd6-9d85-3d221daddde9",
       "childCollection": "725bf52e-1ffb-40ad-8b8a-3ade67d9683b",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "550a2a9e-cde5-4a24-adad-b6a99a97a026",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1222.5,
+            "y": 1650
+          },
+          {
+            "x": 1222.5,
+            "y": 1702
+          },
+          {
+            "x": 1210,
+            "y": 1702
+          },
+          {
+            "x": 1210,
+            "y": 1754
+          }
+        ],
+        "sides": [
+          "bottom",
+          "top"
+        ]
+      }
     },
     {
       "name": "ORE_SAMPLE_collected_by_ORE_SAMPLE_COLLECTOR",
@@ -5813,7 +6875,37 @@
       "parentCollection": "a69582d3-03d2-4d02-a19d-73b1b8ba33cc",
       "childCollection": "c98d7b8c-774a-4996-84d7-fa4b525982cd",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "9fa06f99-3d57-47ea-8d71-05ec65ae3e45",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 2616,
+            "y": 1814
+          },
+          {
+            "x": 2539,
+            "y": 1814
+          },
+          {
+            "x": 2539,
+            "y": 1806
+          },
+          {
+            "x": 2462,
+            "y": 1806
+          }
+        ],
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
     },
     {
       "name": "ORE_SAMPLE_analyzed_via_ASSAY_ORDER",
@@ -5838,7 +6930,37 @@
       "parentCollection": "a69582d3-03d2-4d02-a19d-73b1b8ba33cc",
       "childCollection": "f3c5184d-88c4-4871-9f02-a84b761b91be",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "496a4f7e-64c5-4aea-ab0c-c47df4e5b4d2",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1699,
+            "y": 2064
+          },
+          {
+            "x": 1963.5,
+            "y": 2064
+          },
+          {
+            "x": 1963.5,
+            "y": 1858
+          },
+          {
+            "x": 2228,
+            "y": 1858
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ]
+      }
     },
     {
       "name": "ORE_SAMPLE_indicates_SUFFICIENT_MINERAL_INTEREST",
@@ -5863,7 +6985,37 @@
       "parentCollection": "a69582d3-03d2-4d02-a19d-73b1b8ba33cc",
       "childCollection": "5bfad853-aef4-4b83-9a29-68b456c6eab5",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "be7c0f30-a9b8-4e05-8cdf-677f91b1b1ff",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 2388.5,
+            "y": 1704
+          },
+          {
+            "x": 2388.5,
+            "y": 1729
+          },
+          {
+            "x": 2345,
+            "y": 1729
+          },
+          {
+            "x": 2345,
+            "y": 1754
+          }
+        ],
+        "sides": [
+          "bottom",
+          "top"
+        ]
+      }
     },
     {
       "name": "ORE_SAMPLE_referenced_by_SITE_MATERIAL_PAYLOAD",
@@ -5888,7 +7040,37 @@
       "parentCollection": "a69582d3-03d2-4d02-a19d-73b1b8ba33cc",
       "childCollection": "fa656c58-1d2d-43b6-baae-b794e11b00ad",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "5b44bb08-0328-4f33-8a8d-4d4290d3b1e9",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 2570.709905660376,
+            "y": 2434.9882075471696
+          },
+          {
+            "x": 2516.3549528301883,
+            "y": 2434.9882075471696
+          },
+          {
+            "x": 2516.3549528301883,
+            "y": 1858
+          },
+          {
+            "x": 2462,
+            "y": 1858
+          }
+        ],
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
     },
     {
       "name": "ASSAY_ORDER_has_docs_ASSAY_DOCUMENT",
@@ -5913,7 +7095,37 @@
       "parentCollection": "f3c5184d-88c4-4871-9f02-a84b761b91be",
       "childCollection": "fc23f72b-ee77-4928-8f16-1d1e1d96f341",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "ba0af9f8-88cc-4da4-a588-e1335fa2f460",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1312,
+            "y": 2028
+          },
+          {
+            "x": 1382,
+            "y": 2028
+          },
+          {
+            "x": 1382,
+            "y": 2038
+          },
+          {
+            "x": 1452,
+            "y": 2038
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ]
+      }
     },
     {
       "name": "SITE_MATERIAL_PAYLOAD_results_in_MINERAL_REFINEMENT",
@@ -5938,7 +7150,37 @@
       "parentCollection": "fa656c58-1d2d-43b6-baae-b794e11b00ad",
       "childCollection": "ae8d9b3c-79f5-4762-9b7b-629e79f85011",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "dd2fa69e-6b2b-4cf2-a426-98c3164a90ef",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 2800.6666666666665,
+            "y": 1480
+          },
+          {
+            "x": 2800.6666666666665,
+            "y": 1851.4941037735848
+          },
+          {
+            "x": 2725.709905660376,
+            "y": 1851.4941037735848
+          },
+          {
+            "x": 2725.709905660376,
+            "y": 2222.9882075471696
+          }
+        ],
+        "sides": [
+          "bottom",
+          "top"
+        ]
+      }
     },
     {
       "name": "MINERAL_REFINEMENT_has_docs_REFINEMENT_DOCUMENT",
@@ -5963,7 +7205,37 @@
       "parentCollection": "ae8d9b3c-79f5-4762-9b7b-629e79f85011",
       "childCollection": "b4f8fb07-f2a0-48af-923a-8aa1d6f9d691",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "1f1cc75a-4d7e-43b8-8a15-086708d17ad8",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 2514,
+            "y": 1321
+          },
+          {
+            "x": 2565,
+            "y": 1321
+          },
+          {
+            "x": 2565,
+            "y": 1375
+          },
+          {
+            "x": 2616,
+            "y": 1375
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ]
+      }
     },
     {
       "name": "MINERAL_REFINEMENT_generates_PRODUCTION_COMPENSATION",
@@ -5988,7 +7260,29 @@
       "parentCollection": "ae8d9b3c-79f5-4762-9b7b-629e79f85011",
       "childCollection": "91d61513-7987-4053-b759-62a7893f1b77",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "6d588295-0aea-45ea-93c5-f4d86abdb254",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 3004,
+            "y": 1375
+          },
+          {
+            "x": 2893,
+            "y": 1375
+          }
+        ],
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
     },
     {
       "name": "PARTY_MINERAL_CONTRACT_TERM_has_docs_MINERAL_CONTRACT_DOCUMENT",
@@ -6013,7 +7307,37 @@
       "parentCollection": "005f25dc-fba0-4328-995d-1fe75460cc63",
       "childCollection": "f5874e16-cc97-4247-b815-ca62ad3fdd79",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "6cff9fb2-414f-43a1-9ecb-646b4a4a35cf",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 2949,
+            "y": 1115
+          },
+          {
+            "x": 2976.5,
+            "y": 1115
+          },
+          {
+            "x": 2976.5,
+            "y": 1112
+          },
+          {
+            "x": 3004,
+            "y": 1112
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ]
+      }
     },
     {
       "name": "PARTY_MINERAL_CONTRACT_TERM_paid_under_PRODUCTION_COMPENSATION",
@@ -6038,7 +7362,37 @@
       "parentCollection": "005f25dc-fba0-4328-995d-1fe75460cc63",
       "childCollection": "91d61513-7987-4053-b759-62a7893f1b77",
       "level": "field",
-      "lineSize": 2
+      "lineSize": 2,
+      "hackoladeStyles": {
+        "GUID": "82286b29-3f3d-4cb9-a972-a94ebf5eb03c",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 3321,
+            "y": 1375
+          },
+          {
+            "x": 3367,
+            "y": 1375
+          },
+          {
+            "x": 3367,
+            "y": 1160
+          },
+          {
+            "x": 3342,
+            "y": 1160
+          }
+        ],
+        "sides": [
+          "right",
+          "right"
+        ]
+      }
     }
   ],
   "users": [],
@@ -6458,13 +7812,62 @@
       ]
     }
   ],
-  "businessGlossaryTerms": [],
+  "businessGlossaryTerms": [
+    {
+      "GUID": "a3c8f014-4b00-4480-b5db-d8f5aebb0385",
+      "glossaryId": "56f912e9-5d60-4b10-b372-2ad95795d482",
+      "name": "Mineral",
+      "properties": {
+        "656809d1-7636-4f53-a31b-66b1a7577155": "30d9d2a6-f31e-4e6c-9496-0062d637ad53",
+        "9c79d3d3-aa56-481f-951d-1a1fd8000017": "Mineral",
+        "843b283b-5233-4f99-80b6-2e4ec713f1d5": "A naturally occurring substance of value tracked by the company; gold is the primary mineral of interest, with other minerals (e.g., silver, copper, platinum, uranium) possibly present.",
+        "c72220ba-cce0-43df-a9a3-b25c5e7ba5fb": "Minerals & Market",
+        "03c101ee-d0e2-41b5-9868-253d4349f24a": "Commodity mineral",
+        "025f138f-02e8-4968-8310-69b19ee01a47": "Needs Validation",
+        "abb126ef-77bc-416b-bb8b-2625f9ce7816": "Gold Prospecting Narrative (About the Minerals and Ore Samples section)"
+      },
+      "refIds": [
+        "d4f9bd96-e3ac-4201-a0e5-221a7736cfed",
+        "3d91b54f-6ca4-4a51-ad72-63cd8e234c77"
+      ]
+    },
+    {
+      "GUID": "a105adc5-c495-49bc-a4f6-2a9f06dc6bab",
+      "glossaryId": "a35680af-8ebb-4972-82a7-4a0843a2a637",
+      "name": "IDENTIFIER",
+      "properties": {
+        "95fb3f91-be33-44a3-a644-0c5c5311bee3": "1eb0d5de-8efc-4480-af3b-14525a85f368",
+        "0cb8ff5e-6017-48a7-923e-3ef7e5563315": "IDENTIFIER",
+        "b5a6382a-5046-40a9-809d-04fd9c5d3ead": "A meaningless value (often sequentially or randomly generated) that uniquely represents an occurrence of a record about an object, entity, or thing.",
+        "843efee1-5a67-452b-beae-3e3554cf88a3": "Specific Object/Instance/Category",
+        "ef6b0205-5121-4f1f-9151-2ea98d62d8b1": "Not applicable."
+      },
+      "refIds": [
+        "d4f9bd96-e3ac-4201-a0e5-221a7736cfed"
+      ]
+    },
+    {
+      "GUID": "16eb17aa-9c9b-4c75-8875-73a9edd40aac",
+      "glossaryId": "a35680af-8ebb-4972-82a7-4a0843a2a637",
+      "name": "NAME",
+      "properties": {
+        "95fb3f91-be33-44a3-a644-0c5c5311bee3": "1015c255-f92a-42ff-9922-444e411e7c47",
+        "0cb8ff5e-6017-48a7-923e-3ef7e5563315": "NAME",
+        "b5a6382a-5046-40a9-809d-04fd9c5d3ead": "Meaningful alphabetic data using words which identifies a specific object or may identify a type or category of an object or thing.",
+        "843efee1-5a67-452b-beae-3e3554cf88a3": "Specific Object/Instance/Category",
+        "ef6b0205-5121-4f1f-9151-2ea98d62d8b1": "Allowed but optional."
+      },
+      "refIds": [
+        "3d91b54f-6ca4-4a51-ad72-63cd8e234c77"
+      ]
+    }
+  ],
   "dbVendor": "Polyglot",
   "appTarget": "Polyglot",
   "creationTS": "2026-03-05T02:21:54.374Z",
   "GUID": "1110c6c5-5d69-4588-951b-ef96f200301b",
   "isLineageEnabled": false,
-  "lastModifTS": "2026-03-05T17:32:30.183Z",
+  "lastModifTS": "2026-03-05T17:52:29.009Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -6734,8 +8137,8 @@
           },
           {
             "GUID": "fa656c58-1d2d-43b6-baae-b794e11b00ad",
-            "x": 3004,
-            "y": 2220,
+            "x": 2570.709905660376,
+            "y": 2222.9882075471696,
             "width": 310,
             "height": 318,
             "color": {
