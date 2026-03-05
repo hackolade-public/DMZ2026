@@ -67,7 +67,7 @@ In order to access files prepared in our repository, you must create a connectio
 **Note:** be aware of the branch in your link.  A branch is typically ephemeral, whereas the main branch is persistent.  While it is useful to share a model link in a branch as you collaborate on a new feature, in a portal, you probably want to store a the lin too the main branch to show always the latest approved version.
 
 ## 8. Bind model attributes with glossary terms
-1) search for the word mienral in the Object Browser Find box
+1) search for the word mineral in the Object Browser Find box
 <img width="359" height="396" alt="image" src="https://github.com/user-attachments/assets/d38eb77d-1d3f-4cec-bd29-00ecbfd6443c" />
 
 2) click on the Mineral Entity to focus the ERD on that entity, and click on the mineral_id attribute
