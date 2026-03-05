@@ -1,0 +1,374 @@
+erDiagram
+
+  %% =========================
+  %% CORE REFERENCE / LOOKUPS
+  %% =========================
+
+  MINERAL {
+    int mineral_id PK
+    string mineral_name
+    boolean is_hazardous
+    string notes
+  }
+
+  JURISDICTION {
+    int jurisdiction_id PK
+    string jurisdiction_name
+    string jurisdiction_type  "state|federal|county|other"
+    string notes
+  }
+
+  %% =========================
+  %% PARTIES + CONTACTS + DOCS
+  %% =========================
+
+  PARTY {
+    int party_id PK
+    string party_name
+    string party_type          "person|organization"
+    string party_role          "partner|contractor|worker|laboratory|refinery|surveyor|contact|other"
+    string notes
+  }
+
+  LOCATION_ADDRESS {
+    int address_id PK
+    int party_id FK
+    string address_type        "mailing|physical|other"
+    string line1
+    string line2
+    string city
+    string state
+    string postal_code
+    string country
+    boolean is_preferred
+  }
+
+  PHONE_NUMBER {
+    int phone_id PK
+    int party_id FK
+    string phone_type          "mobile|work|home|other"
+    string phone_number
+    boolean is_preferred
+  }
+
+  INTERNET_CONTACT_DETAIL {
+    int internet_contact_id PK
+    int party_id FK
+    string contact_type        "email|website|other"
+    string contact_value
+    boolean is_preferred
+  }
+
+  DOCUMENT {
+    int document_id PK
+    string document_type       "contract|permit|photo|report|invoice|manifest|general|other"
+    string file_name
+    string file_uri            "path/url/blob-id"
+    date document_date
+    string description
+  }
+
+  PARTY_DOCUMENT {
+    int party_document_id PK
+    int party_id FK
+    int document_id FK
+    string relationship_type   "agreement|license|correspondence|other"
+  }
+
+  PARTY ||--o{ LOCATION_ADDRESS : has
+  PARTY ||--o{ PHONE_NUMBER : has
+  PARTY ||--o{ INTERNET_CONTACT_DETAIL : has
+  PARTY ||--o{ PARTY_DOCUMENT : has
+  DOCUMENT ||--o{ PARTY_DOCUMENT : linked_to
+
+  %% =========================
+  %% LAND PARCELS + SUBTYPES
+  %% =========================
+
+  LAND_PARCEL {
+    int parcel_id PK
+    string parcel_name
+    string parcel_type         "prospect|claim|mineral_lease|private_land"
+    string status              "active|inactive|abandoned"
+    string location_description
+    decimal acres_estimated
+    string description
+  }
+
+  PROSPECT {
+    int parcel_id PK,FK
+    date research_start_date
+    date research_end_date
+    boolean sufficient_expected_minerals
+    string notes
+  }
+
+  CLAIM {
+    int parcel_id PK,FK
+    date filing_date
+    date approval_date
+    string claim_status         "active|inactive|abandoned"
+    string managing_agency
+    string notes
+  }
+
+  MINERAL_LEASE {
+    int parcel_id PK,FK
+    date lease_start_date
+    date lease_end_date
+    string lease_terms_summary
+    string notes
+  }
+
+  PRIVATE_LAND {
+    int parcel_id PK,FK
+    boolean surface_rights_owned
+    boolean mineral_rights_owned
+    string notes
+  }
+
+  LAND_PARCEL_POINT {
+    int parcel_point_id PK
+    int parcel_id FK
+    int point_sequence         "corner order around boundary"
+    decimal latitude
+    decimal longitude
+    string landmark_notes
+    boolean is_virtual_marker
+  }
+
+  LAND_PARCEL_DOCUMENT {
+    int parcel_document_id PK
+    int parcel_id FK
+    int document_id FK
+    string relationship_type   "contract|permit|photo|general|other"
+  }
+
+  LAND_PARCEL_PARTY {
+    int parcel_party_id PK
+    int parcel_id FK
+    int party_id FK
+    string parcel_party_role   "prospector|partner|worker|contact|lessor|owner|other"
+    date role_start_date
+    date role_end_date
+    string notes
+  }
+
+  PROSPECT_CONVERSION {
+    int conversion_id PK
+    int source_prospect_parcel_id FK
+    int target_parcel_id FK
+    decimal converted_acres
+    date conversion_date
+    string notes
+  }
+
+  LAND_PARCEL ||--|| PROSPECT : subtype
+  LAND_PARCEL ||--|| CLAIM : subtype
+  LAND_PARCEL ||--|| MINERAL_LEASE : subtype
+  LAND_PARCEL ||--|| PRIVATE_LAND : subtype
+
+  LAND_PARCEL ||--o{ LAND_PARCEL_POINT : has_boundary_points
+  LAND_PARCEL ||--o{ LAND_PARCEL_DOCUMENT : has_docs
+  DOCUMENT ||--o{ LAND_PARCEL_DOCUMENT : linked_to
+
+  LAND_PARCEL ||--o{ LAND_PARCEL_PARTY : involves
+  PARTY ||--o{ LAND_PARCEL_PARTY : participates
+
+  LAND_PARCEL ||--o{ PROSPECT_CONVERSION : source
+  LAND_PARCEL ||--o{ PROSPECT_CONVERSION : target
+
+  %% =========================
+  %% MINING METHODS
+  %% =========================
+
+  MINING_METHOD_OPTION {
+    int mining_method_id PK
+    string method_name
+    string method_description
+    string mining_type          "placer|hard-rock|other"
+  }
+
+  MINING_METHOD_LEGALITY {
+    int method_legality_id PK
+    int mining_method_id FK
+    int jurisdiction_id FK
+    string legal_status         "legal|restricted|banned"
+    string notes
+  }
+
+  PARCEL_MINING_METHOD_USE {
+    int parcel_method_use_id PK
+    int parcel_id FK
+    int mining_method_id FK
+    boolean is_preferred
+    string notes
+  }
+
+  MINING_METHOD_OPTION ||--o{ MINING_METHOD_LEGALITY : regulated_by
+  JURISDICTION ||--o{ MINING_METHOD_LEGALITY : defines
+  LAND_PARCEL ||--o{ PARCEL_MINING_METHOD_USE : allows
+  MINING_METHOD_OPTION ||--o{ PARCEL_MINING_METHOD_USE : used_on
+
+  %% =========================
+  %% ORE SAMPLES + ASSAYS
+  %% =========================
+
+  ORE_SAMPLE {
+    int ore_sample_id PK
+    int parcel_id FK
+    decimal latitude
+    decimal longitude
+    decimal depth
+    date collection_date
+    string description
+  }
+
+  ORE_SAMPLE_COLLECTOR {
+    int ore_sample_collector_id PK
+    int ore_sample_id FK
+    int party_id FK
+    string collector_role        "surveyor|prospector|other"
+    string notes
+  }
+
+  ASSAY_ORDER {
+    int assay_order_id PK
+    int ore_sample_id FK
+    int laboratory_party_id FK
+    date order_date
+    date received_date
+    string status                "requested|received|canceled|other"
+    string notes
+  }
+
+  ASSAY_DOCUMENT {
+    int assay_document_id PK
+    int assay_order_id FK
+    int document_id FK
+    string relationship_type     "order_request|assay_report|supporting"
+  }
+
+  SUFFICIENT_MINERAL_INTEREST {
+    int interest_id PK
+    int ore_sample_id FK
+    int mineral_id FK
+    decimal expected_quantity
+    decimal found_quantity
+    string quantity_uom          "g|oz|lb|kg|ppm|other"
+    boolean is_sufficient
+    string notes
+  }
+
+  LAND_PARCEL ||--o{ ORE_SAMPLE : yields
+  ORE_SAMPLE ||--o{ ORE_SAMPLE_COLLECTOR : collected_by
+  PARTY ||--o{ ORE_SAMPLE_COLLECTOR : collects
+
+  ORE_SAMPLE ||--o{ ASSAY_ORDER : analyzed_via
+  PARTY ||--o{ ASSAY_ORDER : laboratory
+  ASSAY_ORDER ||--o{ ASSAY_DOCUMENT : has_docs
+  DOCUMENT ||--o{ ASSAY_DOCUMENT : linked_to
+
+  ORE_SAMPLE ||--o{ SUFFICIENT_MINERAL_INTEREST : indicates
+  MINERAL ||--o{ SUFFICIENT_MINERAL_INTEREST : assessed_for
+
+  %% =========================
+  %% PRODUCTION: PAYLOADS + REFINING + DOCS
+  %% =========================
+
+  SITE_MATERIAL_PAYLOAD {
+    int payload_id PK
+    int parcel_id FK
+    int ore_sample_id FK        "nullable: payload may reference a sample"
+    int shipment_approver_party_id FK
+    int refinery_party_id FK
+    string container_type
+    string container_identifier
+    decimal gross_weight
+    decimal tare_weight
+    decimal net_weight
+    decimal moisture_pct
+    string shipment_status       "pending|approved|shipped|received|processed|other"
+    date shipped_date
+    date received_date
+    string refinery_receipt_reference
+    string notes
+  }
+
+  MINERAL_REFINEMENT {
+    int mineral_refinement_id PK
+    int payload_id FK
+    int mineral_id FK
+    int refinery_party_id FK
+    decimal refined_weight
+    decimal fee_pct_by_weight
+    decimal returned_weight
+    decimal sold_weight
+    date refinement_date
+    string notes
+  }
+
+  REFINEMENT_DOCUMENT {
+    int refinement_document_id PK
+    int mineral_refinement_id FK
+    int document_id FK
+    string relationship_type     "invoice|manifest|refinery_report|other"
+  }
+
+  LAND_PARCEL ||--o{ SITE_MATERIAL_PAYLOAD : produces
+  ORE_SAMPLE ||--o{ SITE_MATERIAL_PAYLOAD : referenced_by
+  PARTY ||--o{ SITE_MATERIAL_PAYLOAD : shipment_approver
+  PARTY ||--o{ SITE_MATERIAL_PAYLOAD : refinery
+
+  SITE_MATERIAL_PAYLOAD ||--o{ MINERAL_REFINEMENT : results_in
+  MINERAL ||--o{ MINERAL_REFINEMENT : refined_as
+  PARTY ||--o{ MINERAL_REFINEMENT : performed_by
+
+  MINERAL_REFINEMENT ||--o{ REFINEMENT_DOCUMENT : has_docs
+  DOCUMENT ||--o{ REFINEMENT_DOCUMENT : linked_to
+
+  %% =========================
+  %% COMPENSATION CONTRACTS + PAYMENTS
+  %% =========================
+
+  PARTY_MINERAL_CONTRACT_TERM {
+    int contract_term_id PK
+    int parcel_id FK
+    int party_id FK
+    int mineral_id FK
+    string land_party_role_name  "logical role name from model"
+    decimal compensation_pct
+    date effective_start_date
+    date effective_end_date
+    string notes
+  }
+
+  MINERAL_CONTRACT_DOCUMENT {
+    int contract_document_id PK
+    int contract_term_id FK
+    int document_id FK
+    string relationship_type     "contract|amendment|supporting"
+  }
+
+  PRODUCTION_COMPENSATION {
+    int compensation_id PK
+    int mineral_refinement_id FK
+    int contract_term_id FK
+    date compensation_date
+    decimal compensated_weight
+    string weight_uom            "g|oz|lb|kg|other"
+    decimal spot_price_per_uom
+    decimal compensation_value
+    string currency_code         "USD|other"
+    string notes
+  }
+
+  LAND_PARCEL ||--o{ PARTY_MINERAL_CONTRACT_TERM : has_terms
+  PARTY ||--o{ PARTY_MINERAL_CONTRACT_TERM : has_terms
+  MINERAL ||--o{ PARTY_MINERAL_CONTRACT_TERM : applies_to
+
+  PARTY_MINERAL_CONTRACT_TERM ||--o{ MINERAL_CONTRACT_DOCUMENT : has_docs
+  DOCUMENT ||--o{ MINERAL_CONTRACT_DOCUMENT : linked_to
+
+  MINERAL_REFINEMENT ||--o{ PRODUCTION_COMPENSATION : generates
+  PARTY_MINERAL_CONTRACT_TERM ||--o{ PRODUCTION_COMPENSATION : paid_under
