@@ -1,3 +1,9 @@
-You are a data modeling expert and an expert in mermaid ER code. Analyze the attached model description in PDF. It contains descriptions and the schema. You must convert it into mermaid ER code to make an ERD. Syntax must be compliant with Mermaid ER code specification.
+Copy the prompt below, and paste in the GenAI tool of your choice (ChatGPT, Claude, Mistral AI Chat, etc).  Note that results may differ...
+
+```
+You are a data modeling expert and an expert in mermaid ER code. Analyze the attached model description in PDF.
+It contains descriptions and the schema. You must convert it into mermaid ER code to make an ERD.
+Syntax must be compliant with Mermaid ER code specification.
+```
 
 (and add the PDF from <a href="https://technicspub.com/wp-content/uploads/2026/02/4-Gold-Prospecting-Provided-Entities-and-Attributes.pdf" target="_blank" rel="noopener noreferrer">https://technicspub.com/wp-content/uploads/2026/02/4-Gold-Prospecting-Provided-Entities-and-Attributes.pdf</a> (Use Ctrl/Cmd+click to open in a new tab) )
