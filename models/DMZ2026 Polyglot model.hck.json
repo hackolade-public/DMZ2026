@@ -24,12 +24,141 @@
   },
   "sources": [],
   "decorativeSymbols": [],
+  "businessGlossaries": [
+    {
+      "GUID": "a35680af-8ebb-4972-82a7-4a0843a2a637",
+      "name": "classwords_dictionary_minimal.csv",
+      "hasHeaders": true,
+      "format": "custom",
+      "kind": "relativePath",
+      "relativePath": "../glossaries/classwords_dictionary_minimal.csv",
+      "mapping": [
+        {
+          "GUID": "95fb3f91-be33-44a3-a644-0c5c5311bee3",
+          "columnIdentifier": "Identifier",
+          "displayName": "Identifier",
+          "role": "identifier",
+          "isMultipleValue": false,
+          "position": 0,
+          "displayType": "text",
+          "isMapped": true
+        },
+        {
+          "GUID": "0cb8ff5e-6017-48a7-923e-3ef7e5563315",
+          "columnIdentifier": "class_word",
+          "displayName": "Term",
+          "role": "name",
+          "isMultipleValue": false,
+          "position": 1,
+          "displayType": "text",
+          "isMapped": true
+        },
+        {
+          "GUID": "b5a6382a-5046-40a9-809d-04fd9c5d3ead",
+          "columnIdentifier": "description",
+          "displayName": "Description",
+          "isMultipleValue": false,
+          "position": 2,
+          "displayType": "text",
+          "isMapped": true
+        },
+        {
+          "GUID": "843efee1-5a67-452b-beae-3e3554cf88a3",
+          "columnIdentifier": "category",
+          "displayName": "category",
+          "position": 3,
+          "displayType": "text",
+          "isMapped": false
+        },
+        {
+          "GUID": "ef6b0205-5121-4f1f-9151-2ea98d62d8b1",
+          "columnIdentifier": "allowed_values",
+          "displayName": "allowed_values",
+          "position": 4,
+          "displayType": "text",
+          "isMapped": false
+        }
+      ]
+    },
+    {
+      "GUID": "56f912e9-5d60-4b10-b372-2ad95795d482",
+      "name": "gold_prospecting_business_glossary.csv",
+      "hasHeaders": true,
+      "format": "custom",
+      "kind": "relativePath",
+      "relativePath": "../glossaries/gold_prospecting_business_glossary.csv",
+      "mapping": [
+        {
+          "GUID": "656809d1-7636-4f53-a31b-66b1a7577155",
+          "columnIdentifier": "Identifier",
+          "displayName": "Identifier",
+          "role": "identifier",
+          "isMultipleValue": false,
+          "position": 0,
+          "displayType": "text",
+          "isMapped": true
+        },
+        {
+          "GUID": "9c79d3d3-aa56-481f-951d-1a1fd8000017",
+          "columnIdentifier": "Term",
+          "displayName": "Term",
+          "role": "name",
+          "isMultipleValue": false,
+          "position": 1,
+          "displayType": "text",
+          "isMapped": true
+        },
+        {
+          "GUID": "843b283b-5233-4f99-80b6-2e4ec713f1d5",
+          "columnIdentifier": "Definition",
+          "displayName": "Description",
+          "isMultipleValue": false,
+          "position": 2,
+          "displayType": "text",
+          "isMapped": true
+        },
+        {
+          "GUID": "c72220ba-cce0-43df-a9a3-b25c5e7ba5fb",
+          "columnIdentifier": "Domain",
+          "displayName": "Domain",
+          "position": 3,
+          "displayType": "text",
+          "isMapped": false
+        },
+        {
+          "GUID": "03c101ee-d0e2-41b5-9868-253d4349f24a",
+          "columnIdentifier": "Synonyms",
+          "displayName": "Synonyms",
+          "position": 4,
+          "displayType": "text",
+          "isMapped": false
+        },
+        {
+          "GUID": "025f138f-02e8-4968-8310-69b19ee01a47",
+          "columnIdentifier": "GovernanceStatus",
+          "displayName": "GovernanceStatus",
+          "position": 5,
+          "displayType": "text",
+          "isMapped": false
+        },
+        {
+          "GUID": "abb126ef-77bc-416b-bb8b-2625f9ce7816",
+          "columnIdentifier": "Source",
+          "displayName": "Source",
+          "position": 6,
+          "displayType": "text",
+          "isMapped": false
+        }
+      ]
+    }
+  ],
+  "businessGlossaryTerms": [],
   "dbVendor": "Polyglot",
   "appTarget": "Polyglot",
   "creationTS": "2026-03-05T02:21:54.374Z",
   "GUID": "1110c6c5-5d69-4588-951b-ef96f200301b",
   "isLineageEnabled": false,
-  "lastModifTS": "2026-03-05T02:25:59.859Z",
+  "lastModifTS": "2026-03-05T15:44:10.347Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -40,6 +169,7 @@
   "applicationInformation": {
     "version": "8.9.5"
   },
+  "hackoladeMeta": {},
   "settings": {
     "centralPane": {
       "dbLevel": {
