@@ -22,4 +22,15 @@ In order to access files prepared in our repository, you must create a connectio
 2) paste the access token published in <a href="https://hackoladestudio-my.sharepoint.com/:w:/g/personal/pascal_desmarets_hackolade_com/IQCLU6CwcmGGTbt-0oAJz1lSAU7sUqw4fbTNJCGBK6iHjWI?e=B7jLLn" target="_blank" rel="noopener noreferrer">this document</a> (Use Ctrl/Cmd+click to open in a new tab)
 3) click the Connect button, then close the dialog.
 
+## 3. Adjust parameter to facilitate operations with repo
+
+1) go to Tools > Options
+2) in the General tab, first line, choose GitHub from the dropdown list
+<img width="864" height="221" alt="image" src="https://github.com/user-attachments/assets/d81d4ad9-c38e-4719-83ab-d9002df0c5e8" />
+
+3) click the OK button
+
+
+
+
 
