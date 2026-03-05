@@ -19,6 +19,6 @@ This browser-based data modeling solution is highly secure.  See more informatio
 In order to access files prepared in our repository, you must create a connection to your repo:
 
 1) go to the menu option Repository > Repository Connections (last option in the menu)
-2) paste the access token you received and click the Connect button, then close the dialog.
+2) paste the access token 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 and click the Connect button, then close the dialog.
 
 
