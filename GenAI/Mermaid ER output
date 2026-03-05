@@ -1,0 +1,151 @@
+erDiagram
+   DOCUMENT {
+    BIGINT document_identifier PK
+    DATE document_date
+    VARCHAR(250) document_title_name
+    VARCHAR(50) document_type_name
+    CHAR(500) description_text
+    PICTURE attached_file
+    JSON json_document
+    VARCHAR(50) document_status_name
+  }
+ 
+  EQUIPMENT {
+    BIGINT equipment_identifier PK
+    BIGINT parcel_identifier FK
+    VARCHAR(100) equipment_name
+    VARCHAR(50) equipment_type_name
+    VARCHAR(100) equipment_manufacturer_name
+    VARCHAR(50) equipment_model_number
+    VARCHAR(100) equipment_serial_number
+    DATE equipment_purchase_date
+    VARCHAR(500) equipment_notes_text
+    VARCHAR(50) equipment_status_name
+    DATE equipment_last_maintenance_date
+    VARCHAR(500) equipment_condition_description_text
+  }
+ 
+  INTERNET_CONTACT_DETAIL {
+    BIGINT party_identifier FK
+    VARCHAR(250) internet_address_identifier PK
+    VARCHAR(25) internet_address_type_name
+    VARCHAR(250) internet_display_text
+    BIT default_display_switch
+  }
+ 
+  LOCATION_ADDRESS {
+    BIGINT party_identifier FK
+    VARCHAR(25) address_category_name PK
+    VARCHAR(250) location_address_text
+    CHAR(1) mailing_address_indicator
+    BIT default_display_switch
+  }
+ 
+  MARKET_VALUE {
+    BIGINT market_value_identifier PK
+    BIGINT mineral_identifier FK
+    DECIMAL(10) spot_price_amount
+    DATETIME market_timestamp
+  }
+ 
+  MINERAL {
+    BIGINT mineral_identifier PK
+    VARCHAR(25) mineral_name
+    VARCHAR(200) mineral_description_text
+    VARCHAR(30) mineral_measurement_name
+    CHAR(1) hazardous_mineral_switch
+    DECIMAL(3) mineral_specific_gravity_count
+  }
+ 
+  PARTY {
+    BIGINT party_identifier PK
+    VARCHAR(50) party_type_name
+    VARCHAR(20) prefix_name
+    VARCHAR(45) first_name
+    VARCHAR(45) middle_name
+    VARCHAR(100) last_name
+    VARCHAR(20) suffix_name
+    VARCHAR(250) company_name
+    VARCHAR(100) job_title_name
+    VARCHAR(50) stored_file_pattern_name
+    PICTURE photograph_file
+    VARCHAR(5000) note_text
+  }
+ 
+  PHONE_NUMBER {
+    BIGINT party_identifier FK
+    VARCHAR(25) phone_number_category_name PK
+    VARCHAR(25) phone_number PK
+    SMALLINT phone_display_sequence_number
+    CHAR(1) preferred_indicator
+  }
+ 
+  RELATED_ASSAY_DOCUMENT {
+    BIGINT assay_order_identifier PK
+    BIGINT document_identifier PK
+    VARCHAR(500) document_relation_comment
+    DATE document_relation_create_date
+  }
+ 
+  RELATED_LAND_PARCEL_DOCUMENT {
+    BIGINT parcel_identifier PK
+    BIGINT document_identifier PK
+    VARCHAR(500) document_relation_comment
+    DATE document_relation_create_date
+  }
+ 
+  RELATED_MINERAL_CONTRACT_DOCUMENT {
+    BIGINT party_mineral_contract_term_identifier PK
+    BIGINT document_identifier PK
+    VARCHAR(500) document_relation_comment
+    DATE document_relation_create_date
+  }
+ 
+  RELATED_MINERAL_REFINEMENT_DOCUMENT {
+    BIGINT mineral_refinement_identifier PK
+    BIGINT document_identifier PK
+    VARCHAR(500) document_relation_comment
+    DATE document_relation_create_date
+  }
+ 
+  RELATED_PARTY_DOCUMENT {
+    BIGINT party_identifier PK
+    BIGINT document_identifier PK
+    VARCHAR(500) document_relation_comment
+    DATE document_relation_create_date
+  }
+ 
+  %% Placeholders: referenced by FK/PFK in the PDF but not described there
+  LAND_PARCEL {
+    BIGINT parcel_identifier PK
+  }
+ 
+  ASSAY_ORDER {
+    BIGINT assay_order_identifier PK
+  }
+ 
+  PARTY_MINERAL_CONTRACT_TERM {
+    BIGINT party_mineral_contract_term_identifier PK
+  }
+ 
+  MINERAL_REFINEMENT {
+    BIGINT mineral_refinement_identifier PK
+  }
+ 
+  %% Relationships inferred from FK/PFK columns in the PDF
+  MINERAL ||--o{ MARKET_VALUE : "mineral_identifier"
+  PARTY  ||--o{ INTERNET_CONTACT_DETAIL : "party_identifier"
+  PARTY  ||--o{ LOCATION_ADDRESS : "party_identifier"
+  PARTY  ||--o{ PHONE_NUMBER : "party_identifier"
+  PARTY    ||--o{ RELATED_PARTY_DOCUMENT : "party_identifier"
+  DOCUMENT ||--o{ RELATED_PARTY_DOCUMENT : "document_identifier"
+  ASSAY_ORDER ||--o{ RELATED_ASSAY_DOCUMENT : "assay_order_identifier"
+  DOCUMENT    ||--o{ RELATED_ASSAY_DOCUMENT : "document_identifier"
+  LAND_PARCEL ||--o{ EQUIPMENT : "parcel_identifier"
+  LAND_PARCEL ||--o{ RELATED_LAND_PARCEL_DOCUMENT : "parcel_identifier"
+  DOCUMENT    ||--o{ RELATED_LAND_PARCEL_DOCUMENT : "document_identifier"
+  PARTY_MINERAL_CONTRACT_TERM ||--o{ RELATED_MINERAL_CONTRACT_DOCUMENT : "party_mineral_contract_term_identifier"
+  DOCUMENT                    ||--o{ RELATED_MINERAL_CONTRACT_DOCUMENT : "document_identifier"
+  MINERAL_REFINEMENT ||--o{ RELATED_MINERAL_REFINEMENT_DOCUMENT : "mineral_refinement_identifier"
+  DOCUMENT           ||--o{ RELATED_MINERAL_REFINEMENT_DOCUMENT : "document_identifier"
+ 
