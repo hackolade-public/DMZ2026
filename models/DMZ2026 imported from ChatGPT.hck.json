@@ -819,6 +819,16 @@
           "unique": false,
           "childRelationships": [
             "17a006e4-5620-4ed8-b476-2587f682cee8"
+          ],
+          "glossaryTerms": [
+            {
+              "GUID": "221122f8-8b77-4693-bb71-5406e94a8b0f",
+              "glossaryTermId": "21af1101-9118-4c6f-aaea-bb054f498047"
+            },
+            {
+              "GUID": "42ff64b0-54d6-497b-9307-ccc63a70c462",
+              "glossaryTermId": "30d28d97-db7d-4cc3-9f70-df4cfdb5755c"
+            }
           ]
         },
         {
@@ -838,7 +848,17 @@
           "compositeUniqueKey": false,
           "GUID": "328bb038-2978-4c2a-8b90-803933ff8425",
           "description": "",
-          "unique": false
+          "unique": false,
+          "glossaryTerms": [
+            {
+              "GUID": "d5acf455-fbe0-4152-acbc-acc54c19c574",
+              "glossaryTermId": "21af1101-9118-4c6f-aaea-bb054f498047"
+            },
+            {
+              "GUID": "c80b9493-bffd-471d-8ac0-a7b6937f3a40",
+              "glossaryTermId": "ecfe85ec-ce3d-43ff-9917-3f84033a0efc"
+            }
+          ]
         },
         {
           "code": "",
@@ -2574,14 +2594,63 @@
       ]
     }
   ],
-  "businessGlossaryTerms": [],
+  "businessGlossaryTerms": [
+    {
+      "GUID": "21af1101-9118-4c6f-aaea-bb054f498047",
+      "glossaryId": "53b2b1f3-4acb-4aea-8b81-77479696d38f",
+      "name": "Mineral",
+      "properties": {
+        "fc3a8966-3c83-407c-945b-a3d1ab867ad2": "30d9d2a6-f31e-4e6c-9496-0062d637ad53",
+        "857f7891-dcaa-4c7d-bc20-06be7a21f249": "Mineral",
+        "0f4103fb-e729-4980-9df9-f48520827d31": "A naturally occurring substance of value tracked by the company; gold is the primary mineral of interest, with other minerals (e.g., silver, copper, platinum, uranium) possibly present.",
+        "8eb26e7e-20c1-4f16-bf4e-28cae0cad074": "Minerals & Market",
+        "0b4e7d0d-df9d-43c5-bcb2-87842b5da331": "Commodity mineral",
+        "9c3d8e34-2bd0-4ef2-83f5-276e97e448e6": "Needs Validation",
+        "72596f29-2249-4356-8d7d-100f7063407a": "Gold Prospecting Narrative (About the Minerals and Ore Samples section)"
+      },
+      "refIds": [
+        "a3db0a20-6f35-412d-85b7-da5f1ce8796c",
+        "328bb038-2978-4c2a-8b90-803933ff8425"
+      ]
+    },
+    {
+      "GUID": "30d28d97-db7d-4cc3-9f70-df4cfdb5755c",
+      "glossaryId": "929858b2-0d00-4377-b498-f4f0ee5a5d41",
+      "name": "IDENTIFIER",
+      "properties": {
+        "abf06021-19fa-4057-b6a2-b8ff346e8646": "1eb0d5de-8efc-4480-af3b-14525a85f368",
+        "44653a55-2685-42af-9de3-35a496210500": "IDENTIFIER",
+        "1404418c-7006-4b16-9cb1-c037ddf6be72": "A meaningless value (often sequentially or randomly generated) that uniquely represents an occurrence of a record about an object, entity, or thing.",
+        "5c6ef2fa-200d-47a5-8eae-bb43b8ebc788": "Specific Object/Instance/Category",
+        "25c4fc79-47bf-4aac-bbc7-fb7521b3c8cb": "Not applicable."
+      },
+      "refIds": [
+        "a3db0a20-6f35-412d-85b7-da5f1ce8796c"
+      ]
+    },
+    {
+      "GUID": "ecfe85ec-ce3d-43ff-9917-3f84033a0efc",
+      "glossaryId": "929858b2-0d00-4377-b498-f4f0ee5a5d41",
+      "name": "NAME",
+      "properties": {
+        "abf06021-19fa-4057-b6a2-b8ff346e8646": "1015c255-f92a-42ff-9922-444e411e7c47",
+        "44653a55-2685-42af-9de3-35a496210500": "NAME",
+        "1404418c-7006-4b16-9cb1-c037ddf6be72": "Meaningful alphabetic data using words which identifies a specific object or may identify a type or category of an object or thing.",
+        "5c6ef2fa-200d-47a5-8eae-bb43b8ebc788": "Specific Object/Instance/Category",
+        "25c4fc79-47bf-4aac-bbc7-fb7521b3c8cb": "Allowed but optional."
+      },
+      "refIds": [
+        "328bb038-2978-4c2a-8b90-803933ff8425"
+      ]
+    }
+  ],
   "dbVendor": "Polyglot",
   "appTarget": "Polyglot",
   "creationTS": "2026-03-05T02:21:54.374Z",
   "GUID": "1110c6c5-5d69-4588-951b-ef96f200301b",
   "isLineageEnabled": false,
   "code": "",
-  "lastModifTS": "2026-03-05T15:47:02.791Z",
+  "lastModifTS": "2026-03-05T15:48:57.319Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
