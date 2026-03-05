@@ -1,0 +1,130 @@
+erDiagram
+
+    Document {
+        BIGINT Document_Identifier PK "NOT NULL"
+        DATE Document_Date "NOT NULL"
+        VARCHAR_250 Document_Title_Name "NOT NULL"
+        VARCHAR_50 Document_Type_Name "NOT NULL"
+        CHAR_500 Description_Text "NULL"
+        PICTURE Attached_File "NULL"
+        JSON JSON_Document "NULL"
+        VARCHAR_50 Document_Status_Name "NOT NULL"
+    }
+
+    Equipment {
+        BIGINT Equipment_Identifier PK "NOT NULL"
+        BIGINT Parcel_Identifier FK "NOT NULL"
+        VARCHAR_100 Equipment_Name "NOT NULL"
+        VARCHAR_50 Equipment_Type_Name "NOT NULL"
+        VARCHAR_100 Equipment_Manufacturer_Name "NULL"
+        VARCHAR_50 Equipment_Model_Number "NULL"
+        VARCHAR_100 Equipment_Serial_Number "NULL"
+        DATE Equipment_Purchase_Date "NULL"
+        VARCHAR_500 Equipment_Notes_Text "NULL"
+        VARCHAR_50 Equipment_Status_Name "NOT NULL"
+        DATE Equipment_Last_Maintenance_Date "NULL"
+        VARCHAR_500 Equipment_Condition_Description_Text "NULL"
+    }
+
+    Internet_Contact_Detail {
+        BIGINT Party_Identifier PK,FK "NOT NULL"
+        VARCHAR_250 Internet_Address_Identifier PK "NOT NULL"
+        VARCHAR_25 Internet_Address_Type_Name "NOT NULL"
+        VARCHAR_250 Internet_Display_Text "NOT NULL"
+        BIT Default_Display_Switch "NOT NULL"
+    }
+
+    Location_Address {
+        BIGINT Party_Identifier PK,FK "NOT NULL"
+        VARCHAR_25 Address_Category_Name PK "NOT NULL"
+        VARCHAR_250 Location_Address_Text "NOT NULL"
+        CHAR_1 Mailing_Address_Indicator "NOT NULL"
+        BIT Default_Display_Switch "NOT NULL"
+    }
+
+    Market_Value {
+        BIGINT Market_Value_Identifier PK "NOT NULL"
+        BIGINT Mineral_Identifier FK "NOT NULL"
+        DECIMAL_10_2 Spot_Price_Amount "NOT NULL"
+        DATETIME Market_Timestamp "NOT NULL"
+    }
+
+    Mineral {
+        BIGINT Mineral_Identifier PK "NOT NULL"
+        VARCHAR_25 Mineral_Name "NOT NULL"
+        VARCHAR_200 Mineral_Description_Text "NOT NULL"
+        VARCHAR_30 Mineral_Measurement_Name "NOT NULL"
+        CHAR_1 Hazardous_Mineral_Switch "NOT NULL"
+        DECIMAL_3_0 Mineral_Specific_Gravity_Count "NOT NULL"
+    }
+
+    Party {
+        BIGINT Party_Identifier PK "NOT NULL"
+        VARCHAR_50 Party_Type_Name "NULL"
+        VARCHAR_20 Prefix_Name "NULL"
+        VARCHAR_45 First_Name "NULL"
+        VARCHAR_45 Middle_Name "NULL"
+        VARCHAR_100 Last_Name "NULL"
+        VARCHAR_20 Suffix_Name "NULL"
+        VARCHAR_250 Company_Name "NULL"
+        VARCHAR_100 Job_Title_Name "NULL"
+        VARCHAR_50 Stored_File_Pattern_Name "NOT NULL"
+        PICTURE Photograph_File "NULL"
+        VARCHAR_5000 Note_Text "NULL"
+    }
+
+    Phone_Number {
+        BIGINT Party_Identifier PK,FK "NOT NULL"
+        VARCHAR_25 Phone_Number_Category_Name PK "NOT NULL"
+        VARCHAR_25 Phone_Number PK "NOT NULL"
+        SMALLINT Phone_Display_Sequence_Number "NULL"
+        CHAR_1 Preferred_Indicator "NOT NULL"
+    }
+
+    Related_Assay_Document {
+        BIGINT Assay_Order_Identifier PK,FK "NOT NULL"
+        BIGINT Document_Identifier PK,FK "NOT NULL"
+        VARCHAR_500 Document_Relation_Comment "NULL"
+        DATE Document_Relation_Create_Date "NULL"
+    }
+
+    Related_Land_Parcel_Document {
+        BIGINT Parcel_Identifier PK,FK "NOT NULL"
+        BIGINT Document_Identifier PK,FK "NOT NULL"
+        VARCHAR_500 Document_Relation_Comment "NULL"
+        DATE Document_Relation_Create_Date "NULL"
+    }
+
+    Related_Mineral_Contract_Document {
+        BIGINT Party_Mineral_Contract_Term_Identifier PK,FK "NOT NULL"
+        BIGINT Document_Identifier PK,FK "NOT NULL"
+        VARCHAR_500 Document_Relation_Comment "NULL"
+        DATE Document_Relation_Create_Date "NULL"
+    }
+
+    Related_Mineral_Refinement_Document {
+        BIGINT Mineral_Refinement_Identifier PK,FK "NOT NULL"
+        BIGINT Document_Identifier PK,FK "NOT NULL"
+        VARCHAR_500 Document_Relation_Comment "NULL"
+        DATE Document_Relation_Create_Date "NULL"
+    }
+
+    Related_Party_Document {
+        BIGINT Party_Identifier PK,FK "NOT NULL"
+        BIGINT Document_Identifier PK,FK "NOT NULL"
+        VARCHAR_500 Document_Relation_Comment "NULL"
+        DATE Document_Relation_Create_Date "NULL"
+    }
+
+    %% Relationships
+
+    Mineral ||--o{ Market_Value : "has"
+    Party ||--o{ Internet_Contact_Detail : "has"
+    Party ||--o{ Location_Address : "has"
+    Party ||--o{ Phone_Number : "has"
+    Party ||--o{ Related_Party_Document : "linked via"
+    Document ||--o{ Related_Party_Document : "linked via"
+    Document ||--o{ Related_Land_Parcel_Document : "linked via"
+    Document ||--o{ Related_Assay_Document : "linked via"
+    Document ||--o{ Related_Mineral_Contract_Document : "linked via"
+    Document ||--o{ Related_Mineral_Refinement_Document : "linked via"
