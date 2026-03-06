@@ -2537,12 +2537,11 @@
           ]
         },
         {
-          "code": "",
-          "name": "method_name",
+          "code": "method_name",
+          "name": "Method Nname",
           "isActivated": true,
           "primaryKey": false,
           "required": false,
-          "alternateKey": false,
           "childType": "varchar",
           "type": "string",
           "compositeKey": [
@@ -2550,23 +2549,17 @@
             "compositeUniqueKey"
           ],
           "compositePrimaryKey": false,
-          "compositeUniqueKey": false,
           "GUID": "b36133dd-12a7-4059-b8da-a1f96302cf1a",
           "description": "",
           "unique": false,
-          "mode": "string",
-          "error": {
-            "name": false,
-            "code": false
-          }
+          "error": {}
         },
         {
-          "code": "",
-          "name": "method_description",
+          "code": "method_description",
+          "name": "Method Description",
           "isActivated": true,
           "primaryKey": false,
           "required": false,
-          "alternateKey": false,
           "childType": "varchar",
           "type": "string",
           "compositeKey": [
@@ -2574,23 +2567,17 @@
             "compositeUniqueKey"
           ],
           "compositePrimaryKey": false,
-          "compositeUniqueKey": false,
           "GUID": "6184d588-2378-42c9-9078-ab1314e2adf7",
           "description": "",
           "unique": false,
-          "mode": "string",
-          "error": {
-            "name": false,
-            "code": false
-          }
+          "error": {}
         },
         {
-          "code": "",
-          "name": "mining_type",
+          "code": "mining_type",
+          "name": "Mining Type",
           "isActivated": true,
           "primaryKey": false,
           "required": false,
-          "alternateKey": false,
           "childType": "varchar",
           "type": "string",
           "compositeKey": [
@@ -2598,15 +2585,10 @@
             "compositeUniqueKey"
           ],
           "compositePrimaryKey": false,
-          "compositeUniqueKey": false,
           "GUID": "34aeef1c-48cb-4d3b-8cb2-10052df391f1",
           "description": "placer|hard-rock|other",
           "unique": false,
-          "mode": "string",
-          "error": {
-            "name": false,
-            "code": false
-          }
+          "error": {}
         }
       ],
       "definitions": {
@@ -5411,7 +5393,7 @@
         "dataType": "",
         "shape": [
           {
-            "x": 1327,
+            "x": 1328,
             "y": 1190
           },
           {
@@ -6398,11 +6380,11 @@
           },
           {
             "x": 2527.3667350133633,
-            "y": 998.25
+            "y": 1007.6363636363636
           },
           {
             "x": 2211,
-            "y": 998.25
+            "y": 1007.6363636363636
           }
         ],
         "sides": [
@@ -6456,11 +6438,11 @@
           },
           {
             "x": 2276.1666666666665,
-            "y": 1013
+            "y": 1023.7272727272727
           },
           {
             "x": 2211,
-            "y": 1013
+            "y": 1023.7272727272727
           }
         ],
         "sides": [
@@ -6514,11 +6496,11 @@
           },
           {
             "x": 2374.2036266095383,
-            "y": 909.75
+            "y": 911.0909090909091
           },
           {
             "x": 2211,
-            "y": 909.75
+            "y": 911.0909090909091
           }
         ],
         "sides": [
@@ -6572,11 +6554,11 @@
           },
           {
             "x": 2509.9194813790673,
-            "y": 1042.5
+            "y": 1039.8181818181818
           },
           {
             "x": 2211,
-            "y": 1042.5
+            "y": 1039.8181818181818
           }
         ],
         "sides": [
@@ -6630,11 +6612,11 @@
           },
           {
             "x": 2507.4541961790765,
-            "y": 954
+            "y": 959.3636363636364
           },
           {
             "x": 2211,
-            "y": 954
+            "y": 959.3636363636364
           }
         ],
         "sides": [
@@ -6688,11 +6670,11 @@
           },
           {
             "x": 2276.1666666666665,
-            "y": 924.5
+            "y": 927.1818181818181
           },
           {
             "x": 2211,
-            "y": 924.5
+            "y": 927.1818181818181
           }
         ],
         "sides": [
@@ -6746,11 +6728,11 @@
           },
           {
             "x": 2470.833333333333,
-            "y": 1057.25
+            "y": 1055.909090909091
           },
           {
             "x": 2211,
-            "y": 1057.25
+            "y": 1055.909090909091
           }
         ],
         "sides": [
@@ -6804,11 +6786,11 @@
           },
           {
             "x": 2276.1666666666665,
-            "y": 983.5
+            "y": 991.5454545454545
           },
           {
             "x": 2211,
-            "y": 983.5
+            "y": 991.5454545454545
           }
         ],
         "sides": [
@@ -6862,11 +6844,11 @@
           },
           {
             "x": 2276.1666666666665,
-            "y": 968.75
+            "y": 975.4545454545455
           },
           {
             "x": 2211,
-            "y": 968.75
+            "y": 975.4545454545455
           }
         ],
         "sides": [
@@ -6920,11 +6902,11 @@
           },
           {
             "x": 1790.4666849772134,
-            "y": 954
+            "y": 983.5
           },
           {
             "x": 1873,
-            "y": 954
+            "y": 983.5
           }
         ],
         "sides": [
@@ -6970,11 +6952,11 @@
         "shape": [
           {
             "x": 1775,
-            "y": 1431.3101779262959
+            "y": 1457.3101779262959
           },
           {
             "x": 1824,
-            "y": 1431.3101779262959
+            "y": 1457.3101779262959
           },
           {
             "x": 1824,
@@ -7086,19 +7068,19 @@
         "shape": [
           {
             "x": 3505.333333333333,
-            "y": 1470.6666666666667
+            "y": 1502.6666666666667
           },
           {
             "x": 2858.1666666666665,
-            "y": 1470.6666666666667
+            "y": 1502.6666666666667
           },
           {
             "x": 2858.1666666666665,
-            "y": 939.25
+            "y": 943.2727272727273
           },
           {
             "x": 2211,
-            "y": 939.25
+            "y": 943.2727272727273
           }
         ],
         "sides": [
@@ -7143,20 +7125,20 @@
         "dataType": "",
         "shape": [
           {
-            "x": 1177,
+            "x": 1178,
             "y": 1130
           },
           {
-            "x": 1177,
-            "y": 1082.5
+            "x": 1178,
+            "y": 1083.5
           },
           {
-            "x": 1176.5,
-            "y": 1082.5
+            "x": 1177.5,
+            "y": 1083.5
           },
           {
-            "x": 1176.5,
-            "y": 1035
+            "x": 1177.5,
+            "y": 1037
           }
         ],
         "sides": [
@@ -7166,7 +7148,8 @@
       },
       "hackoladeMeta": {
         "validationErrors": {}
-      }
+      },
+      "materializationConstraintType": "nonIdentifying"
     },
     {
       "name": "MINING_METHOD_OPTION_used_on_PARCEL_MINING_METHOD_USE",
@@ -7205,7 +7188,7 @@
             "y": 984
           },
           {
-            "x": 1326,
+            "x": 1328,
             "y": 984
           }
         ],
@@ -8009,9 +7992,9 @@
     "6ec0f76c-548b-4f2c-81fd-663d6e6c049d": "notes",
     "c9ed582e-49c5-4270-993d-96404d0a00ad": "PROSPECT_CONVERSION",
     "bbc42263-acb4-471f-b194-fee552c3fa2a": "Mining Method Identifier",
-    "b36133dd-12a7-4059-b8da-a1f96302cf1a": "method_name",
-    "6184d588-2378-42c9-9078-ab1314e2adf7": "method_description",
-    "34aeef1c-48cb-4d3b-8cb2-10052df391f1": "mining_type",
+    "b36133dd-12a7-4059-b8da-a1f96302cf1a": "Method Nname",
+    "6184d588-2378-42c9-9078-ab1314e2adf7": "Method Description",
+    "34aeef1c-48cb-4d3b-8cb2-10052df391f1": "Mining Type",
     "4e8603dc-7e83-4dd6-9d85-3d221daddde9": "MINING_METHOD_OPTION",
     "b7900fbc-ac75-42e3-bf81-d7da4faa4e3b": "MINING_METHOD_OPTION_regulated_by_MINING_METHOD_LEGALITY",
     "a2c8eeba-0b19-4910-8818-ecf43849c99c": "MINING_METHOD_OPTION_used_on_PARCEL_MINING_METHOD_USE",
@@ -8357,7 +8340,7 @@
   "creationTS": "2026-03-05T02:21:54.374Z",
   "GUID": "1110c6c5-5d69-4588-951b-ef96f200301b",
   "isLineageEnabled": false,
-  "lastModifTS": "2026-03-06T00:01:04.232Z",
+  "lastModifTS": "2026-03-06T00:18:21.377Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -8548,16 +8531,16 @@
           {
             "GUID": "4e8603dc-7e83-4dd6-9d85-3d221daddde9",
             "x": 1027,
-            "y": 933,
-            "width": 299,
-            "height": 102,
+            "y": 931,
+            "width": 301,
+            "height": 106,
             "color": {
               "hex": "#2196F3"
             }
           },
           {
             "GUID": "c2045a8c-c81b-4188-bb61-3b712ef9a2ec",
-            "x": 1027,
+            "x": 1028,
             "y": 1130,
             "width": 300,
             "height": 120,
@@ -8941,7 +8924,13 @@
         "diagramViews": [],
         "decorativeSymbols": [],
         "nestedCollectionsLayout": "horizontal",
-        "options": [],
+        "options": [
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "4e8603dc-7e83-4dd6-9d85-3d221daddde9"
+          }
+        ],
         "relationshipUpdateDisabled": false
       },
       "collectionLevel": {},
